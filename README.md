@@ -42,3 +42,7 @@ APT will now use these settings for all future package operations.
 ### For Proxies with Authentication
 
 If your proxy requires a username and password, include them in the URL like this:
+```
+Acquire::http::Proxy "http://username:password@your-proxy-address:port/";
+Acquire::https::Proxy "https://username:password@your-proxy-address:port/";
+```
